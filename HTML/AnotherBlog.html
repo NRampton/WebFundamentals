@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Changing your oil</title>
+  <meta name="description" content="A short summary of changing your oil. If you use this as your only source of information, you're gonna have a bad time.">
+</head>
+<body>
+  <div id="overview">
+    <h2>Changing your own oil</h2>
+    <figure>
+      <img src="https://carfromjapan.com/wp-content/uploads/2017/07/changing-car-oil.jpg" width="600" height="300" alt="Oil pouring into an engine."/>
+      <figcaption>Aw, yeah, pour that $#!%.</figcaption>
+    </figure>
+    <br />
+    <p>Ever wanted to learn to change the oil on your car? I'd recommend looking <a href="https://www.youtube.com/watch?v=O1hF25Cowv8">here.</a> But if you're not going to heed that timely warning, read on, friend.</p>
+  </div>
+  <div id="instructions">
+    <h3>Here are your instructions:</h3>
+    <ol>
+      <li>Get the front of your car off the ground. Use a jack, jack stands, be safe. You're going to be underneath your car. If it teams up with gravity against you, you're going to lose.</li>
+      <li>Look under the car and find the oil drain plug. You're looking for a bolt pointing at the ground on a slant, attached to a flat area, like <a href="https://images-na.ssl-images-amazon.com/images/I/41KMd%2B1RoyL._SX466_.jpg" target="_blank">this.</a></li>
+      <li>Put a drain pan under that bolt, then remove the bolt. This will be messy.</li>
+      <li>Once the old oil is gone, put the drainage bolt back and change the oil filter:
+        <ol id="filterinstructions">
+        <li>Unscrew the old filter. Could be tough, may need an oil filter wrench.</li>
+        <li>Dump the old oil out of the filter.</li>
+        <li>Put a little oil on the gasket of the new filter and screw it on hand-tight.</li>
+      </ol></li>
+      <li>Now pour in new oil. Make sure it's the right kind (see table below) and the right amount. Check your owner's manual for this info.</li>
+      <li>Dispose of the old oil properly. Municipal recycling facilities are a good bet, or your local auto parts store.</li>
+    </ol>
+  </div>
+  <div id="oilweight">
+    <table>
+      <caption>
+        <strong>Get the right oil for your vehicle</strong>
+      </caption>
+      <thead>
+        <tr>
+          <th>Type of Vehicle</th>
+          <th>Rec. Oil Weight</th>
+          <th>Price/qt.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Small car</td>
+          <td>10W-30</td>
+          <td>How should I know?</td>
+        </tr>
+        <tr>
+          <td>Light truck</td>
+          <td>5W-20, maybe?</td>
+          <td>No idea.</td>
+        </tr>
+        <tr>
+          <td>Boat</td>
+          <td>What am I, a doctor?</td>
+          <td>Ask your local boat guy.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <form action="#" method="post">
+    <p>1. Why did you come to this webpage?</p>
+    <select>
+      <option value="none">Select...</option>
+      <option value="dontcare">I don't value my automobile.</option>
+      <option value="what">I didn't come to this webpage. How did I get here? Where is this?!</option>
+      <option value="john">I'm just trying to get ahold of you somehow. Please come home, John, the children miss you.</option>
+    </select>
+    <br />
+    <br />
+    <label for="carinfo">2. What kind of car do you drive?</label>
+    <input type="text" id="carinfo" size="50" placeholder="1974 AMC Gremlin"/>
+    <br />
+    <br />
+    <p>3. How much experience do you have working on your own car?</p><br />
+    <input type="radio" name="experience" id="none" value="none" /><label for="none">I definitely know what a car looks like.</label><br />
+    <input type="radio" name="experience" id="some" value="some" /><label for="some">I've injured myself under a car or two.</label><br />
+    <input type="radio" name="experience" id="god" value="god" /><label for="god">I see all and know all. Look on my works, ye mighty, and despair.</label><br />
+    <br />
+    <p>4. Which of the following repairs have you performed yourself?</p>
+    <input type="checkbox" name="brakes" value="brakes">Replaced brake pads<br />
+    <input type="checkbox" name="demon" value="demon">Minor exorcism<br />
+    <input type="checkbox" name="flat" value="flat">Changed flat tire<br />
+    <input type="submit" value="Thanks for your valued input.">
+  </form>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      A practice form.
+    </title>
+  </head>
+  <body>
+    <h1>My Registration Form</h1>
+    <form action="process.php" method="post">
+      <label for="first_name">First Name:</label>
+      <input type="text" id="first_name" name="first_name"><br>
+
+      <label for="last_name">Last Name:</label>
+      <input type="text" id="last_name" name="last_name"><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br>
+
+      <label for="pw_confirm">PW Confirm</label>
+      <input type="password" id="pw_confirm" name="pw_confirm"><br>
+
+      <label for="bday">Birthday:</label>
+      <input type="date" id="bday" name="bday"><br>
+
+      <label for="gender"></label>
+      <input type="radio" name="gender" value="male">Male
+      <input type="radio" name="gender" value="female">Female
+      <input type="radio" name="gender" value="other">Other<br>
+
+      <label for="description">A short description of yourself:</label>
+      <textarea cols=30 name="description">Tell us about yourself.</textarea><br>
+
+      <label for="fav_lang">Favorite Language:</label>
+      <select name="fav_lang">
+        <option value="javascript">JavaScript</option>
+        <option value="python">Python</option>
+        <option value="sumerian">Ancient Sumerian</option>
+      </select><br>
+
+      <input type="submit" value="Sumbit">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+#wrapper {
+  background-color: #D5D2AE;
+  width: 650px;
+  padding: 20px;
+}
+
+#header {
+  width: 500px;
+  margin: 10px auto;
+}
+
+h1 {
+  display: inline;
+  font-family: serif;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  border: 3px solid black;
+}
+
+.headimg {
+  background-color: #FFFFFF;
+  height: 50px;
+  border: none;
+}
+
+.col1{
+  background-color: #82B4EE;
+  padding: 10px;
+}
+
+.col2 {
+  background-color: #F36870;
+  padding: 10px;
+}

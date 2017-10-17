@@ -1,0 +1,39 @@
+/*CSS reset settings here*/
+*{
+ margin: 10px;
+ padding: 10px;
+ }
+#wrapper{
+ width: 1000px;
+ background-color: silver;
+}
+#header{
+ height: 150px;
+ background-color: green;
+}
+#navigation{
+ height: 300px;
+ width: 200px;
+ background-color: blue;
+ display: inline-block;
+ vertical-align: top; /*why does this not move it to the top of the wrapper?*/
+}
+#main_content{
+ height: 400px;
+ width: 715px; /*Check out why the math works out like this. 1000px on the wrapper, 715 on the main_content*/
+ background-color: red;
+ display: inline-block;
+}
+.subcontents{
+ height: 200px;
+ width: 200px;
+ background-color: yellow;
+ display: inline-block;
+ margin-left: 5px;
+ margin-right: 5px;
+}
+#advertisement{
+ height: 120px;
+ width: 660px;
+ background-color: purple;
+}

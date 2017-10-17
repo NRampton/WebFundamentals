@@ -1,0 +1,62 @@
+h1 {
+  font-family: "Comic sans", sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+h2 {
+  display: inline-block;
+  float: right;
+  vertical-align: middle;
+  height: 100%;
+}
+
+#main>div, #portrait, #about {
+  display: inline-block;
+}
+
+.proj {
+  width: 275px;
+  padding-top: 0;
+  margin-right: 10px;
+  vertical-align: top;
+  background: linear-gradient(to right, rgba(231,235,235,0.1),white);
+}
+
+.sectionhead {
+  display:block;
+  position: relative;
+  color: white;
+  margin-top: 0;
+  padding: 5px 5px;
+  background: linear-gradient(rgba(136,136,149,0.5),rgba(136,136,149,1),rgba(136,136,149,0.5))
+}
+
+#wrapper {
+  width: 920px;
+}
+
+#header {
+  display: block;
+}
+
+#main {
+  background: radial-gradient(rgba(0,0,0,0.4), black);
+  padding: 15px 20px 15px 20px;
+}
+
+#portrait {
+  width: 380px;
+  height: 260px;
+  background-color: rgb(196,187,190);
+  margin-right: 10px;
+}
+
+#about {
+  width: 460px;
+  height: 260px;
+}
+
+#row1 {
+  margin-bottom: 10px;
+}
