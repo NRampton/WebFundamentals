@@ -1,29 +1,42 @@
 h1 {
-  font-family: "Comic sans", sans-serif;
+  font-family: "Comic Sans MS", sans-serif;
   display: inline-block;
-  vertical-align: middle;
 }
 
 h2 {
   display: inline-block;
   float: right;
-  vertical-align: middle;
-  height: 100%;
 }
 
 #main>div, #portrait, #about {
   display: inline-block;
 }
 
+.techs {
+  padding: 8px;
+}
+
+.techs>img {
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  margin: 2px;
+}
+
 .proj {
   width: 275px;
   padding-top: 0;
+  padding-bottom: 7px;
   margin-right: 10px;
   vertical-align: top;
-  background: linear-gradient(to right, rgba(231,235,235,0.1),white);
+  background: linear-gradient(to right, rgba(245,235,235,0.1),white);
 }
 
-.sectionhead {
+.proj>div {
+  display: block;
+}
+
+.sectionhead, .minorheading {
   display:block;
   position: relative;
   color: white;
@@ -32,12 +45,43 @@ h2 {
   background: linear-gradient(rgba(136,136,149,0.5),rgba(136,136,149,1),rgba(136,136,149,0.5))
 }
 
+.projectdesc {
+  height: 153px;
+  font-size: 13px;
+  padding: 0 10px;
+}
+
+.projimg {
+  height: 140px;
+}
+
+.button {
+  color: white;
+  background-color: darkolivegreen;
+  border: 1px darkslategray solid;
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px grey;
+}
+
+#button1 {
+  margin-left: 105px;
+}
+
+#button2 {
+  margin-left: 85px;
+}
+
+#button3 {
+  margin-left: 100px;
+}
+
 #wrapper {
   width: 920px;
 }
 
 #header {
   display: block;
+  background: antiquewhite;
 }
 
 #main {
@@ -46,8 +90,9 @@ h2 {
 }
 
 #portrait {
-  width: 380px;
-  height: 260px;
+  width: 370px;
+  height: 250px;
+  padding: 5px;
   background-color: rgb(196,187,190);
   margin-right: 10px;
 }
@@ -55,8 +100,32 @@ h2 {
 #about {
   width: 460px;
   height: 260px;
+  font-size: 13px;
+  vertical-align: top;
+  background: linear-gradient(to right, rgba(245,235,235,0.1),white);
+}
+
+#bio {
+  padding: 0 10px;
 }
 
 #row1 {
   margin-bottom: 10px;
+}
+
+#phone {
+  text-align: center;
+}
+
+#contact {
+  text-align: center;
+  vertical-align: top;
+}
+
+#contact>img {
+  height: 17px;
+}
+
+#contact>* {
+  display: inline;
 }
