@@ -1,15 +1,40 @@
 /*tags*/
-#mainnav>li {
-  display: inline;
-  color: white;
-  margin-left: 42px;
-  vertical-align: center;
+input[type=text] {
+  padding: 13px 20px;
+  text-align: center;
+  border: inset;
+}
+
+input[type=submit] {
+  border: outset;
+  border-radius: 5px;
+  background-color: #2e4ca5;
+  color: antiquewhite;
+  padding: 9px 13px;
+  margin-left: 2px;
+  margin-top: 4px;
 }
 
 /*classes*/
+.yellow {
+  font-size: 20px;
+  color: gold;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 16px;
+}
 
+.white {
+  font-size: 18px;
+  font-weight: 300;
+}
 
 /*ids*/
+
+#wrapper, #header, #main, #mainnavwrap, #subnav, #desc {
+  background-color: #245076;
+}
+
 #main {
   width: 970px;
   padding: 7px;
@@ -17,6 +42,7 @@
 
 #header {
   height: 105px;
+  padding-bottom: 26px;
 }
 
 #header * {
@@ -29,7 +55,34 @@
 }
 
 #searchsize {
-  margin-left: 300px;
+  margin-left: 204px;
+  color: floralwhite;
+  font-size: 14px;
+}
+
+#searchsize p {
+  margin-left: 170px;
+}
+
+#searchsize a {
+  color: yellow;
+}
+
+#search {
+  position: absolute;
+  top: 51px;
+  left: 593px;
+}
+
+#search>form {
+  background-color: #484646;
+  padding: 9px 39px;
+  border-radius: 15px;
+  box-shadow: black 3px 3px 3px;
+}
+
+#bpipe {
+  color: black;
 }
 
 #mainnavwrap {
@@ -41,12 +94,92 @@
   height: 36px;
   border-radius: 10px;
   box-shadow: black 2px 2px 2px;
-  width: 75%;
+  width: 88%;
   margin: 0 auto;
   padding-top: 15px;
   padding-left: 15px;
+  font-size: 20px;
 }
 
-#wrapper, #header, #main, #mainnavwrap, #subnav, #desc {
-  background-color: #245076;
+#mainnav>li {
+  display: inline;
+  color: white;
+  margin-left: 43px;
+}
+
+#subnav {
+  color: antiquewhite;
+  font-size: 18px;
+  font-weight: 200;
+  display: inline-block;
+  padding-left: 112px;
+  vertical-align: top;
+  margin-right: 30px;
+}
+
+#subnav li {
+  text-align: center;
+  list-style-position: inside;
+  line-height: 32px;
+}
+
+#subnav a {
+  color: antiquewhite;
+}
+
+#desc {
+  font-size:14px;
+  color: antiquewhite;
+  display: inline-block;
+  width: 540px;
+  text-align: center;
+}
+
+#quicklinks {
+  background-color: white;
+  text-align: center;
+  padding-top: 15px;
+}
+
+#quicklinks>div {
+  display: inline-block;
+  width: 380px;
+  vertical-align: top;
+  border-top: 5px solid #4e81ab;
+  padding-right: 50px;
+  padding-left: 25px;
+}
+
+#quicklinks ul {
+  list-style-type: square;
+}
+
+#getstarted a, #apps a {
+  text-decoration: none;
+  color: cornflowerblue;
+}
+
+#footer {
+  padding-top: 35px;
+  padding-left: 100px;
+  padding-bottom: 5px;
+}
+
+#footlinks li {
+  display: inline;
+  font-size: 20px;
+  font-weight: 300;
+  margin-left: 25px;
+}
+
+#footlinks a {
+  text-decoration: none;
+  color: rgba(250,235,215,0.5);
+}
+
+#footer p {
+  color: rgba(250,235,215,0.5);
+  font-size: 12px;
+  width: 300px;
+  margin: 0 auto;
 }
