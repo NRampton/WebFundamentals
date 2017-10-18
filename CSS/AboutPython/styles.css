@@ -35,6 +35,10 @@ input[type=submit] {
   background-color: #245076;
 }
 
+#wrapper {
+  width: 970px;
+}
+
 #main {
   width: 970px;
   padding: 7px;
