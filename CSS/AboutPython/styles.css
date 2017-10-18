@@ -1,0 +1,52 @@
+/*tags*/
+#mainnav>li {
+  display: inline;
+  color: white;
+  margin-left: 42px;
+  vertical-align: center;
+}
+
+/*classes*/
+
+
+/*ids*/
+#main {
+  width: 970px;
+  padding: 7px;
+}
+
+#header {
+  height: 105px;
+}
+
+#header * {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#logo {
+  height: 100px;
+}
+
+#searchsize {
+  margin-left: 300px;
+}
+
+#mainnavwrap {
+  height: 70px;
+}
+
+#mainnav {
+  background: linear-gradient(#1364b3, #447eca, #1364b3);
+  height: 36px;
+  border-radius: 10px;
+  box-shadow: black 2px 2px 2px;
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+#wrapper, #header, #main, #mainnavwrap, #subnav, #desc {
+  background-color: #245076;
+}
