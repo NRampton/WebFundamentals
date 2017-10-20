@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      "use strict";
+      function slots(numQuart) {
+        for (var i = numQuart; i > 0; i -= 1) {
+          var spin = Math.trunc(Math.random() * 100);
+          if (spin === 34) {
+            numQuart = i;
+            console.log("You had " +numQuart + " quarters when you won.");
+            var winnings = (Math.trunc(Math.random() * 50) +51);
+            numQuart += winnings;
+            console.log("You won " + winnings + " quarters. Now you have:")
+            return numQuart;
+          } else {
+            continue;
+          }
+        }
+        return 0;
+      }
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

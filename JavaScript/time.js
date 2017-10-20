@@ -1,5 +1,8 @@
 function time(hour, min, per) {
   var output = "It's ";
+  if (min === 15) {
+    output = 
+  }
   if (min >= 30) {
     output += "almost " + (hour + 1) + " ";
   } else {

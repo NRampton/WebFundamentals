@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      function printStudents(arr) {
+        for (i in arr) {
+          console.log(i.first_name + " " + i.last_name);
+        }
+      }
+      function printAll(lib) {
+        console.log("Students");
+        var count1 = 1;
+        for (var i in lib.Students) {
+          var len = lib.Students[i].first_name.length + lib.Students[i].last_name.length;
+          console.log(count1 + " - " + lib.Students[i].first_name + " " + lib.Students[i].last_name + " - " + len)
+          count1++
+        }
+        console.log("Instructors");
+        var count2 = 1;
+        for (var i in lib.Instructors) {
+          var len = lib.Instructors[i].first_name.length + lib.Instructors[i].last_name.length;
+          console.log(count2 + " - " + lib.Instructors[i].first_name + " " + lib.Instructors[i].last_name + " - " + len)
+          count2++
+        }
+      }
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
