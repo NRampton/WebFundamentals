@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  /*outline: 1px solid purple;*/
+}
+
+p {
+  margin: 10px auto;
+}
+
+input {
+  margin-top: 10px;
+}
+
+h5 {
+  font-weight: 200;
+  margin-top: 50px;
+}
+
+.card {
+  width: 400px;
+  height: 170px;
+  margin-left: 30px;
+  margin-top: 10px;
+  text-align: center;
+  padding-top: 30px;
+  border: 1px dashed grey;
+}
+
+#wrapper {
+  width: 900px;
+  margin: auto;
+}
+
+#form_container {
+  width: 225px;
+  padding-left: 30px;
+  background-color: darkgrey;
+}
+
+#form_container, #cards {
+  display: inline-block;
+}
+
+#cards {
+  vertical-align: top;
+}

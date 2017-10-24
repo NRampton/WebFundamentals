@@ -1,8 +1,8 @@
 $(document).ready(function() {
   $('img').click(function() {
-    $(this).fadeOut();
+    $(this).css('visibility','hidden');
   })
   $('button').click(function() {
-    $('img').fadeIn();
+    $('img').css('visibility','visible');
   })
 })
