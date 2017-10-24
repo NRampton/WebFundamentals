@@ -1,0 +1,12 @@
+h4 {
+  display: none;
+}
+
+.function_demo {
+  height: 150px;
+  border-bottom: 2px solid blue;
+}
+
+.blue_text {
+  color: cornflowerblue;
+}
