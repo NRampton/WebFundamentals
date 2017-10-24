@@ -1,0 +1,17 @@
+img {
+  width: 282px;
+  margin-top: 3px;
+  /*margin-left: 17px;*/
+}
+
+#wrapper {
+  width: 900px;
+  margin: 0 auto;
+}
+
+#puzzle {
+  width: 320px;
+  height: 630px;
+  background-color: antiquewhite;
+  padding: 20px 0 0 30px;
+}
