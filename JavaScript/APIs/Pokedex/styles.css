@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+h4 {
+  padding-left: 40px;
+}
+
+img {
+  height: 120px;
+  width: 120px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+li {
+  list-style: none;
+  padding-left: 50px;
+}
+
+#wrapper {
+  width: 600px;
+  height: 4420px;
+}
+
+#pokedex {
+  background-color: bisque;
+  width: 200px;
+  height: 400px;
+  position: fixed;
+  left: 700px;
+  top: 50px;
+  padding-top: 30px
+}
+
+#pokedex p {
+  padding-left: 50px;
+}
+
+#current {
+  margin-left: 40px;
+}
