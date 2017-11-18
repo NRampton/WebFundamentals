@@ -1,0 +1,10 @@
+ul {
+  width: 50%;
+  margin 0 auto;
+}
+
+li {
+  width: 369px;
+  height: 108px;
+  list-stle-type: none;
+}

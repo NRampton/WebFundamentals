@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Playing around with some jQueryUI material. Organization of the content is therefore non-existent.">
+    <title>Accordion and Tabs</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link type="text/javascript" rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <style type="text/css" media="screen">
+      #tabby li {
+        display: inline-block;
+      }
+      a {
+        background-color: grey;
+        border: 1px darkgrey solid;
+        margin-left: 10px;
+        padding: 3px 10px;
+      }
+    </style>
+    <script type="text/javascript">
+      $(function() {
+        $('#accordion').accordion();
+        $('#tabs').tabs();
+      });
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="tabs">
+        <ul id="tabby">
+          <li><a href="#tabs-1">Books</a></li>
+          <li><a href="#tabs-2">Movies</a></li>
+          <li><a href="#tabs-3">Games</a></li>
+        </ul>
+        <div id="tabs-1">
+          <p>Hey, who doesn't love a good book?</p>
+          <div id="accordion">
+            <h3>Books</h3>
+            <div>
+              <ul>
+                <li>Here's a book</li>
+                <li>And here's another</li>
+                <li>And a third book</li>
+              </ul>
+            </div>
+            <h3>Movies</h3>
+            <div>
+              <ul>
+                <li>Here's a movie</li>
+                <li>And here's another</li>
+                <li>And a third movie</li>
+              </ul>
+            </div>
+            <h3>Games</h3>
+            <div>
+              <ul>
+                <li>Here's a game</li>
+                <li>And here's another</li>
+                <li>And a third game</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="tabs-2">
+          <p>Or maybe you'd prefer to watch a movie.</p>
+        </div>
+        <div id="tabs-3">
+          <p>Or play a game—hey, it's up to you. I'm just a website.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

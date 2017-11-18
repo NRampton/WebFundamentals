@@ -1,0 +1,35 @@
+@media only screen and (max-width: 855px) {
+  #nav {display: none;}
+  .s-twelve {width: 100%}
+  .s-three {width: 33.333333%}
+}
+
+@media only screen and (min-width: 855px) {
+  .l-four {width: 25%}
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+#wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#header {
+  width: 100%;
+  background-color: lightgray;
+}
+
+#nav li {
+  display: inline-block;
+  background-color: lightgray;
+  border: 1px solid gray;
+}
+
+.content {
+  float: left;
+  padding-left: 20px;
+}

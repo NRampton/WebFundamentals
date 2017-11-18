@@ -1,0 +1,125 @@
+<html>
+<head>
+	<title>1942 Game</title>
+
+<style type="text/css">
+	body{
+		background-color:black;
+	}
+	#container{
+		background: url('background.jpg');
+		width:1000px;
+		height:550px;
+	}
+	#hero{
+		background: url('1942.gif');
+		background-position: -85px -180px;
+		width:28px;
+		height:28px;
+		position:absolute;
+	}
+	.enemy1{
+		background: url('1942.gif');
+		background-position: -30px -10px;
+		width:28px;
+		height:28px;
+		position:absolute;
+	}
+	.bullet{
+		background: url('1942.gif');
+		background-position: -185px -400px;
+		width:18px;
+		height:18px;
+		position:absolute;
+	}
+	#score{
+		position:absolute;
+		border:10px solid red;
+		top:20px;
+		left:800px;
+		background-color:white;
+		padding:10px;
+		font-size:30px;
+		font-family: Arial;
+	}
+</style>
+</head>
+<body>
+	<div id='container'>
+		<div id='hero'></div>
+		<div id='enemycontainer'></div>
+		<div id='bullets'></div>
+	</div>
+
+	<div id='score'>100</div>
+
+
+<script>
+var hero = { x: 400, y: 350};
+var enemies = [{ x: 50, y: 25},{ x: 150, y: 25},{ x: 250, y: 25},{ x: 350, y: 25},{ x: 450, y: 25},{ x: 550, y: 25},{ x: 650, y: 25}]
+var bullets = [];
+
+function displayHero(){
+	document.getElementById("hero").style.top = hero.y + "px";
+	document.getElementById("hero").style.left = hero.x + "px";
+}
+
+function displayEnemies() {
+	var output = "";
+	for (var i = 0; i < enemies.length; i++) {
+		output += '<div class="enemy1" style="top: ' +enemies[i].y+ 'px; left: ' +enemies[i].x+ 'px"></div>';
+	}
+	document.getElementById('enemycontainer').innerHTML = output;
+}
+
+function moveEnemies() {
+	for (var i = 0; i < enemies.length; i++) {
+		enemies[i].y += 10;
+	}
+}
+
+function displayBullets() {
+
+}
+
+window.onload = function() {
+	displayHero();
+	displayEnemies();
+}
+
+// setInterval(continuous, 300);
+//
+// function continuous() {
+// 	moveEnemies();
+// 	displayEnemies();
+// }
+
+
+window.onkeydown = function(e) {
+	if (e.keyCode == 38) {
+		if (hero.y < 10) return;
+		hero.y -= 20;
+		displayHero();
+	}
+	if (e.keyCode == 40) {
+		if (hero.y >540) return;
+		hero.y += 10;
+		displayHero();
+	}
+	if (e.keyCode == 37) {
+		if (hero.x <10) return;
+		hero.x -= 15;
+		displayHero();
+	}
+	if (e.keyCode == 39) {
+		if (hero.x > 990) return;
+		hero.x += 15;
+		displayHero();
+	}
+}
+
+
+</script>
+
+</body>
+</html>
